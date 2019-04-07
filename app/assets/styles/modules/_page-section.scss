@@ -1,0 +1,159 @@
+.page-section {
+  @include atSmall {
+    height: 100vh;
+  }
+
+  &__top-link {
+    font-size: 1.3rem;
+    margin: 1rem;
+    @include atSmall {
+      margin: 0;
+      position: absolute;
+      top: 6%;
+      left: 5%;
+    }
+  }
+
+  &__info {
+    font-size: 1.3rem;
+    position: fixed;
+    top: 6%;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  &__next {
+    display: none;
+    @include atSmall {
+      display: block;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 92%;
+      left: 5%;
+    }
+    & a {
+      z-index: 5;
+    }
+
+    &--second {
+      @include atSmall {
+        top: 192%;
+      }
+    }
+
+    &--third {
+      @include atSmall {
+        top: 292%;
+      }
+    }
+
+    &--fourth {
+      @include atSmall {
+        top: 392%;
+      }
+    }
+
+    &__divider {
+      margin: 1rem;
+    }
+  }
+
+  &__preview {
+    text-align: center;
+    margin: 1rem;
+    @include atSmall {
+      margin: 0;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 78%;
+      right: 20%;
+    }
+    &--second {
+      top: 178%;
+    }
+
+    &--third {
+      top: 278%;
+    }
+
+    &--fourth {
+      top: 378%;
+    }
+  }
+}
+
+@keyframes anima {
+  0% {
+    width: 500px;
+    height: 200px;
+    transform: translate(-50%);
+    opacity: 1;
+  }
+
+  20% {
+    width: 500px;
+    height: 200px;
+    transform: translate(-50%);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+    width: 500px;
+    height: 592px;
+    transform: translate(-100%, -50%);
+  }
+
+  100% {
+    opacity: 0;
+    width: 500px;
+    height: 592px;
+    transform: translate(-100%, -50%);
+  }
+}
+
+@keyframes marker {
+  0% {
+    opacity: 0;
+  }
+
+  65% {
+    right: 132%;
+    opacity: 0;
+  }
+
+  100% {
+    right: 142%;
+    opacity: 1;
+  }
+}
+
+@keyframes heading {
+  0% {
+    opacity: 0;
+  }
+
+  65% {
+    transform: translate(-60%, -10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, -10%);
+    opacity: 1;
+  }
+}
+
+@keyframes photo {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

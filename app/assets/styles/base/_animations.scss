@@ -1,0 +1,151 @@
+@keyframes inOut {
+  0% {
+    position: relative;
+    left: 50px;
+    bottom: 15px;
+    opacity: 0;
+    display: block;
+  }
+
+  100% {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes marker {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes entry {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes exit {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes expandMenu {
+  0% {
+    margin-top: -15rem;
+  }
+
+  50% {
+    margin-top: -15rem;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+
+@keyframes bounce-code {
+  0% {
+    transform: translate3d(0, -20px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -20px, 0);
+  }
+}
+
+@keyframes bounce-cover {
+  0% {
+    transform: translate3d(0, -30px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -30px, 0);
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes marker-draw {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 16rem;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  50% {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  100% {
+    height: 0;
+    width: 100vw;
+  }
+}
+
+@keyframes revealHeader {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translate(-50%, -60%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -80%);
+  }
+}

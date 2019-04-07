@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="assets/styles/styles-f3b77a0339.css"/>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+      integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+      crossorigin="anonymous"
+    />
+    <script src="assets/scripts/Vendor-fa42dc9eb8.js"></script>
+  </head>
+  <body>
+    <div class="navbar__menu-icon">
+      <div class="navbar__menu-icon__middle"></div>
+    </div>
+    <header class="navbar">
+      <nav>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__li">
+            <a href="#start" id="start-link">start</a>
+          </li>
+          <li class="navbar__menu__li">
+            <a href="#projects" id="projects-link">projects</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navbar__name"><strong>Adam Al-Shaick</strong></div>
+      <ul class="navbar__icons">
+        <li>
+          <a href="https://github.com/adamalshaick"
+            ><i class="fab fa-github navbar__icons__li"></i
+          ></a>
+        </li>
+      </ul>
+      <hr class="navbar__hr" />
+    </header>
+    <section
+      id="start"
+      data-matching-link="#start-link"
+      class="page-section page-section--start"
+    >
+      <header class="heading">
+        <h1 class="heading__text">ADAM AL-SHAICK</h1>
+        <h2 class="heading__text heading__text--sub">WEB DEVELOPER</h2>
+      </header>
+
+      <aside class="phone">
+        <img class="phone__case" src="./assets/images/icons/phone-case.svg" />
+        <img
+          class="phone__screen"
+          src="./assets/images/icons/phone-screen.svg"
+        />
+        <img class="phone__tiles" src="./assets/images/icons/phone-tiles.svg" />
+      </aside>
+    </section>
+    <article
+      id="projects"
+      data-matching-link="#projects-link"
+      class="page-section"
+    >
+      <header class="page-section__heading"><h1>Projects</h1></header>
+      <section class="projects">
+        <figure class="figure">
+          <a class="open-modal--online" href="#">
+            <img
+              data-srcset="./assets/images/online-shop-50.jpg 500w, ./assets/images/online-shop-85.jpg 850w"
+              class="figure__img lazyload"
+            />
+
+            <figcaption class="figure__text">Online Shop</figcaption>
+          </a>
+        </figure>
+
+        <figure class="figure">
+          <a class="open-modal--social" href="#">
+            <img
+              data-srcset="./assets/images/social-app-50.jpg 500w, ./assets/images/social-app-85.jpg 850w"
+              class="figure__img figure__img--reverse lazyload"
+            />
+            <figcaption class="figure__text figure__text--reverse">
+              Social App
+            </figcaption>
+          </a>
+        </figure>
+
+        <figure class="figure">
+          <a class="open-modal--portfolio" href="#">
+            <img
+              data-srcset="
+                ./assets/images/portfolio-50.jpg 500w,
+                ./assets/images/portfolio-85.jpg 850w
+              "
+              class="figure__img lazyload"
+            />
+            <figcaption class="figure__text">Portfolio</figcaption>
+          </a>
+        </figure>
+      </section>
+    </article>
+
+    <div class="modal modal--online">
+      <div class="modal__inner">
+        <h2 class="modal__heading">Online Shop</h2>
+
+        <p class="modal__description">
+          React, Redux, Node.js Application
+        </p>
+        <a href="https://github.com/adamalshaick/Online-Shop"
+          ><div>See the code on github: <i class="fab fa-github fa-2x"></i></div
+        ></a>
+        <a href="https://online--shop.herokuapp.com/login">
+          Live preview: <i class="fas fa-mouse-pointer fa-2x"></i
+        ></a>
+      </div>
+      <div class="modal__close">X</div>
+    </div>
+
+    <div class="modal modal--social">
+      <div class="modal__inner">
+        <h2 class="modal__heading">Social App</h2>
+
+        <p class="modal__description">
+          React, Redux, Node.js Application
+        </p>
+        <a href="https://github.com/adamalshaick/Social-App"
+          ><div>See the code on github: <i class="fab fa-github fa-2x"></i></div
+        ></a>
+        <a href="https://social--app.herokuapp.com/login">
+          Live preview: <i class="fas fa-mouse-pointer fa-2x"></i
+        ></a>
+      </div>
+      <div class="modal__close">X</div>
+    </div>
+
+    <div class="modal modal--portfolio">
+      <div class="modal__inner">
+        <h2 class="modal__heading">Portfolio</h2>
+
+        <p class="modal__description">
+          Website built with html5, ccs3, javascript, gulp and webpack
+        </p>
+        <a href="https://github.com/adamalshaick/Portfolio"
+          ><div>See the code on github: <i class="fab fa-github fa-2x"></i></div
+        ></a>
+      </div>
+      <div class="modal__close">X</div>
+    </div>
+
+    <script src="assets/scripts/App-78d8068e70.js"></script>
+  </body>
+</html>

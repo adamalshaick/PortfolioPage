@@ -1,0 +1,27 @@
+.starter {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  opacity: 0;
+  z-index: 1;
+
+  &--unpack {
+    animation: anima 1.5s ease-in-out;
+  }
+
+  &__heading {
+    background-image: url(../../assets/images/icons/project1.svg);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    z-index: 2;
+  }
+}

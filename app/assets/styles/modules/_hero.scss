@@ -1,0 +1,167 @@
+.hero {
+  width: 320px;
+  height: 380px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../../assets/images/social-app-first.jpg);
+  background-size: cover;
+  animation: photo 2.5s;
+
+  @include atSmall {
+    width: 500px;
+    height: 592px;
+    position: absolute;
+    left: auto;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    text-align: center;
+
+    @include atSmall {
+      font-size: 5rem;
+      max-width: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: right;
+      transform: translate(-50%, -60%);
+    }
+
+    @include atMedium {
+      transform: translate(-50%, -10%);
+      animation: heading 2.3s;
+    }
+
+    &--second {
+      @include atSmall {
+        position: absolute;
+        top: 150%;
+      }
+    }
+
+    &--third {
+      @include atSmall {
+        position: absolute;
+        top: 250%;
+      }
+    }
+
+    &--fourth {
+      @include atSmall {
+        position: absolute;
+        top: 350%;
+      }
+    }
+  }
+
+  &--second {
+    background-image: url(../../assets/images/beer-app-fourth.jpg);
+    @include atSmall {
+      position: absolute;
+      top: 150%;
+    }
+  }
+
+  &--third {
+    background-image: url(../../assets/images/online-shop-second.jpg);
+    @include atSmall {
+      position: absolute;
+      top: 250%;
+    }
+  }
+
+  &--fourth {
+    background-image: url(../../assets/images/portfolio-third.jpg);
+    @include atSmall {
+      position: absolute;
+      top: 350%;
+    }
+  }
+
+  &__marker {
+    @include atMedium {
+      background-image: url(../../assets/images/icons/project1.svg);
+      background-repeat: no-repeat;
+      width: 200px;
+      height: inherit;
+      transform: rotate(90deg);
+      position: absolute;
+      right: 142%;
+      bottom: 30%;
+      animation: marker 2.3s;
+    }
+
+    &--second {
+      @include atMedium {
+        background-image: url(../../assets/images/icons/project2.svg);
+        position: absolute;
+        bottom: 30%;
+      }
+    }
+
+    &--third {
+      @include atMedium {
+        background-image: url(../../assets/images/icons/project3.svg);
+        position: absolute;
+        bottom: 30%;
+      }
+    }
+
+    &--fourth {
+      @include atMedium {
+        background-image: url(../../assets/images/icons/project4.svg);
+        position: absolute;
+        bottom: 30%;
+      }
+    }
+  }
+
+  &__line {
+    display: none;
+    @include atMedium {
+      display: block;
+      position: relative;
+      left: 250px;
+      bottom: 130px;
+      height: 1px;
+      background-color: black;
+      width: 160px;
+    }
+    &--fourth {
+      @include atSmall {
+        left: 260px;
+        bottom: 40px;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 1rem;
+    @include atSmall {
+      position: relative;
+      left: 150px;
+      bottom: -50px;
+      text-align: justify;
+    }
+    @include atMedium {
+      left: 450px;
+      bottom: 150px;
+    }
+
+    &--fourth {
+      @include atSmall {
+        left: 150px;
+        bottom: -60px;
+      }
+      @include atMedium {
+        left: 450px;
+        bottom: 60px;
+      }
+    }
+  }
+}
