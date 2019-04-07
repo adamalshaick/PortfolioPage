@@ -1,6 +1,6 @@
-var gulp = require("gulp"),
-  autoprefixer = require("gulp-autoprefixer");
-var sass = require("gulp-sass");
+const gulp = require("gulp"),
+  autoprefixer = require("gulp-autoprefixer"),
+  sass = require("gulp-sass");
 
 gulp.task("styles", function() {
   return gulp

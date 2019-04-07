@@ -1,8 +1,8 @@
-var gulp = require('gulp'),
-webpack = require('webpack');
+const gulp = require("gulp"),
+  webpack = require("webpack");
 
-gulp.task('scripts', ['modernizr'], function(callback) {
-  webpack(require('../../webpack.config.js'), function(err, stats) {
+gulp.task("scripts", function() {
+  webpack(require("../../webpack.config.js"), function(err, stats) {
     if (err) {
       console.log(err.toString());
     }
@@ -11,3 +11,10 @@ gulp.task('scripts', ['modernizr'], function(callback) {
     callback();
   });
 });
+
+gulp.task(
+  "scriptsRefresh",
+  gulp.series("scripts", function() {
+    browserSync.reload();
+  })
+);
